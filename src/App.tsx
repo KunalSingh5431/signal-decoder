@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import  { useEffect, useMemo, useState } from "react";
 import Grid from "./components/Grid";
 import { getRule } from "./utils/levelRules";
 import "./styles/app.css";
