@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = {
   theme: "light" | "dark";
   toggleTheme: () => void;
