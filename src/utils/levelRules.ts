@@ -1,10 +1,10 @@
 export const indexToRC = (index: number) => {
-    return { r: Math.floor(index / 5), c: index % 5 };
+    return { r: Math.floor(index / 5), c: index % 5 };   //Converts a 1D index (0–24) in a 5x5 grid to row r and column c
   };
 export const isPrime = (n: number): boolean => {
     if (n < 2) return false;           
     for (let i = 2; i * i <= n; i++) {
-      if (n % i === 0) return false;   
+      if (n % i === 0) return false;    //Checks if a number is prime
     }
     return true;                     
 };
@@ -38,8 +38,8 @@ export const getRule = (level: number) => {
         return (index: number) => {
           if (!randomLevelCells.has(level)) {
             const randomSet = new Set<number>();
-            const count = 6 + Math.floor(Math.random() * 3);
-            while (randomSet.size < count) {
+            const count = 6 + Math.floor(Math.random() * 3);  // Random number of active cells 6, 7, or 8
+            while (randomSet.size < count) {                //Generate unique random indices until we reach the required count
               const randIndex = Math.floor(Math.random() * 25);
               randomSet.add(randIndex);
             }

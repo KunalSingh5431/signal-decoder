@@ -7,14 +7,14 @@ import incorrect from "./assets/incorrect.mp3";
 import ThemeToggle from "./components/ThemeToggle";
 
 export default function App() {
-  const [timeLeft, setTimeLeft] = useState(10);
-  const [level, setLevel] = useState(1);
+  const [timeLeft, setTimeLeft] = useState(10); // countdown timer
+  const [level, setLevel] = useState(1); // current level
   const [observing, setObserving] = useState(true);
-  const [showOn, setShowOn] = useState(true);
-  const [selectedSet, setSelectedSet] = useState<Set<number>>(new Set());
+  const [showOn, setShowOn] = useState(true); // whether flashing cells are visible
+  const [selectedSet, setSelectedSet] = useState<Set<number>>(new Set()); // user's selections
   const [feedbackMap, setFeedbackMap] = useState<Map<number, "correct" | "incorrect" | "missed"> | null>(null);
   const [score, setScore] = useState(0);
-  const ruleFn = useMemo(() => getRule(level), [level]);
+  const ruleFn = useMemo(() => getRule(level), [level]); // Memoized rule function per level
   const correctSound = new Audio(correct);
   const incorrectSound = new Audio(incorrect);
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -81,7 +81,7 @@ export default function App() {
 
   const handleSubmit = () => {
     const trueSet = new Set<number>();
-    for (let i = 0; i < 25; i++) if (ruleFn(i)) trueSet.add(i);
+    for (let i = 0; i < 25; i++) if (ruleFn(i)) trueSet.add(i); // cells that should have flashed
     const feedback = new Map<number, "correct" | "incorrect" | "missed">();
     selectedSet.forEach((i) => {
       if (trueSet.has(i)) {

@@ -10,7 +10,7 @@ type GridProps = {
 };
 
 export default function Grid({ observing, showOn, ruleFn, selectedSet, feedbackMap, onCellClick }: GridProps) {
-  const cells = Array.from({ length: 25 }, (_, i) => i);
+  const cells = Array.from({ length: 25 }, (_, i) => i); // Generate array of cell indices (0 to 24 for a 5x5 grid)
 
   return (
     <div className="grid">
