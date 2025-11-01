@@ -105,9 +105,9 @@ npm run dev
 
 ## 🌐 Live Demo
 
-signal-decoder-flax.vercel.app
+[signal-decoder-flax.vercel.app
+](https://signal-decoder-flax.vercel.app/)
 
----
 
 ## 🤝 Contributing
 
