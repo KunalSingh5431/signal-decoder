@@ -90,6 +90,8 @@ src/
 ├── App.tsx
 └── main.tsx
 
+---
+
 ## 🛠 Installation
 
 ```bash
@@ -99,11 +101,15 @@ npm install
 npm run dev
 ```
 
-🌐 Live Demo
+---
 
-Coming Soon…
+## 🌐 Live Demo
 
-🤝 Contributing
+signal-decoder-flax.vercel.app
+
+---
+
+## 🤝 Contributing
 
 Pull requests and suggestions are welcome!
 If you like this project, ⭐ star this repository!
