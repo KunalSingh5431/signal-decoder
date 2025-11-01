@@ -73,7 +73,8 @@ Each level introduces a new logic challenge — from simple parity checks to spa
 
 ## 📷 Preview
 
-> *(Add GIF/screenshots here later)*
+<img width="1919" height="863" alt="Image" src="https://github.com/user-attachments/assets/e6cdeba2-75ce-478a-90ed-49b5f9f3332c" />
+<img width="1919" height="882" alt="Image" src="https://github.com/user-attachments/assets/722c0642-9471-4825-a1a4-6241f724a1e2" />
 
 ---
 
