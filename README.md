@@ -78,4 +78,34 @@ Each level introduces a new logic challenge — from simple parity checks to spa
 ---
 
 ## 📁 Project Structure
+src/
+├── components/
+│ ├── Grid.tsx
+│ ├── Cell.tsx
+│ └── LevelIndicator.tsx
+├── hooks/
+│ └── useFlashLogic.ts
+├── utils/
+│ └── rules.ts
+├── App.tsx
+└── main.tsx
+
+## 🛠 Installation
+
+```bash
+git clone https://github.com/YOUR-USERNAME/signal-decoder.git
+cd signal-decoder
+npm install
+npm run dev
+```
+
+🌐 Live Demo
+
+Coming Soon…
+
+🤝 Contributing
+
+Pull requests and suggestions are welcome!
+If you like this project, ⭐ star this repository!
+
 
