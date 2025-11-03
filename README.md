@@ -26,6 +26,10 @@ Your task: observe, identify the rule, and select the correct squares.
 
 Each level introduces a new logic challenge — from simple parity checks to spatial patterns.
 
+🌐 Live Demo
+
+[signal-decoder-flax.vercel.app](https://signal-decoder-flax.vercel.app/)
+
 ---
 
 ## 🎯 Gameplay Steps
@@ -103,12 +107,6 @@ npm run dev
 ```
 
 ---
-
-## 🌐 Live Demo
-
-[signal-decoder-flax.vercel.app
-](https://signal-decoder-flax.vercel.app/)
-
 
 ## 🤝 Contributing
 
